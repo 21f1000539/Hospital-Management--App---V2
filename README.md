@@ -159,15 +159,3 @@ cd backend
 - `GET /api/patient/export-status`
 - `GET /api/patient/export-download/<export_id>`
 
-## Notes
-
-- Database tables are created automatically from Flask models.
-- Admin is created programmatically on first run.
-- Bootstrap is used for simple UI styling.
-- If email credentials are not added, reminder/report/export messages are printed in console.
-
-## Viva Explanation
-
-This project is a role-based hospital management system. Admin manages doctors and appointments, doctors manage availability and treatment details, and patients can register, book appointments, and check their medical history.
-
-I used Flask with SQLite because it is simple and easy to explain. Vue is used for the frontend to make the pages interactive, and Redis/Celery are added for caching and background jobs as required in the project statement.
